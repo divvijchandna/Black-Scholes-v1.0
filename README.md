@@ -19,6 +19,19 @@ Follow these steps to run the application locally.
 
 ### Installation  
 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your_username/Black-Scholes-v1.0.git
-   cd Black-Scholes-v1.0
+    ```bash
+    git clone https://github.com/your_username/Black-Scholes-v1.0.git
+    cd Black-Scholes-v1.0
+
+2. Create a virtual environment and activate it:
+    ```bash
+    python -m venv .venv
+    .venv\Scripts\activate  # On Windows
+
+3. Install required dependencies:
+    ```bash
+    pip install -r requirements.txt
+
+4. Run the application:
+    ```bash
+    streamlit run app.py
