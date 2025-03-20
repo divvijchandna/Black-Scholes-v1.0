@@ -38,7 +38,7 @@ Follow these steps to run the application locally.
     
 ## 📊 How It Works  
 The Black-Scholes model calculates the theoretical price of options using the following formula:  
-$$ C = S\Phi(d_1) - Ke^{-rt}\Phi(d_2) $$  
+$C = S\Phi(d_1) - Ke^{-rt}\Phi(d_2)$  
 where:  
 - \( C \): Price of the call option  
 - \( S \): Current spot price of the underlying asset  
