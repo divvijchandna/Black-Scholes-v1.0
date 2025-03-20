@@ -45,7 +45,7 @@ where:
 - \( K \): Strike price of the option  
 - \( t \): Time to maturity (in years)  
 - \( r \): Risk-free interest rate  
-- \( \Phi(d) \): Cumulative distribution function of the standard normal distribution  
+- $(\Phi(d))$: Cumulative distribution function of the standard normal distribution  
 
 ### Intermediate Variables:
 - \( d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)t}{\sigma \sqrt{t}} \)  
