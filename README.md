@@ -38,17 +38,17 @@ Follow these steps to run the application locally.
     
 ## 📊 How It Works  
 The Black-Scholes model calculates the theoretical price of options using the following formula:  
-$C = S\Phi(d_1) - Ke^{-rt}\Phi(d_2)$  
+$C = \Phi(d_1)S_t - \Phi(d_2)Ke^{-rt}$  
 where:  
 - $( C )$: Price of the call option  
-- $( S )$: Current spot price of the underlying asset  
+- $( S_t )$: Current spot price of the underlying asset  
 - $( K )$: Strike price of the option  
 - $( t )$: Time to maturity (in years)  
 - $( r )$: Risk-free interest rate  
 - $( \Phi(d) )$: Cumulative distribution function of the standard normal distribution  
 
 ### Intermediate Variables:
-- $( d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)t}{\sigma \sqrt{t}} )$  
+- $( d_1 = \frac{\ln(S_t/K) + (r + \sigma^2/2)t}{\sigma \sqrt{t}} )$  
 - $( d_2 = d_1 - \sigma \sqrt{t} )$
 
-The app simplifies these calculations, allowing users to input parameters like the spot price, strike price, volatility (\( \sigma \)), risk-free rate, and time to maturity. It then computes and displays the option price in a user-friendly interface.
+The app simplifies these calculations, allowing users to input parameters like the spot price, strike price, volatility ($( \sigma )$), risk-free rate, and time to maturity. It then computes and displays the option price in a user-friendly interface.
